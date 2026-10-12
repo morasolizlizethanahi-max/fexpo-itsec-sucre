@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEXPO ITSEC SUCRE - Presentación de Stands</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans text-gray-800 min-h-screen flex flex-col justify-between">
+
+    <!-- ENCABEZADO Y BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <header class="bg-itsec-blue text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <!-- Logo e Identidad -->
+            <div class="flex items-center space-x-3">
+                <div class="bg-itsec-gold text-itsec-blue font-black rounded-lg p-2 text-xl tracking-wider">
+                    ITSEC
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold leading-tight">FEXPO ITSEC SUCRE</h1>
+                    <p class="text-xs text-itsec-amber">Instituto Técnico Superior de Educación Comercial</p>
+                </div>
+            </div>
+
+            <!-- Botón directo a Facebook oficial -->
+            <a href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1" target="_blank" rel="noopener noreferrer" 
+               class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold px-4 py-2 rounded-full flex items-center space-x-2 transition shadow">
+                <i class="fab font-bold fa-facebook-f"></i>
+                <span>Facebook FEXPO ITSEC</span>
+            </a>
+        </div>
+
+        <!-- MENÚ DE PESTAÑAS (SPA) -->
+        <nav class="bg-itsec-navy border-t border-blue-900/50">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-1 p-2">
+                    <button id="btn-tab-1" onclick="openTab('tab-1')" 
+                            class="tab-btn active-tab-btn px-4 py-3 text-sm font-medium rounded-lg text-white hover:bg-white/10 transition text-center flex items-center justify-center gap-2">
+                        <i class="fas fa-id-card"></i>
+                        <span>Carátula</span>
+                    </button>
+                    <button id="btn-tab-2" onclick="openTab('tab-2')" 
+                            class="tab-btn px-4 py-3 text-sm font-medium rounded-lg text-gray-200 hover:bg-white/10 transition text-center flex items-center justify-center gap-2">
+                        <i class="fas fa-store"></i>
+                        <span>Stand 1</span>
+                    </button>
+                    <button id="btn-tab-3" onclick="openTab('tab-3')" 
+                            class="tab-btn px-4 py-3 text-sm font-medium rounded-lg text-gray-200 hover:bg-white/10 transition text-center flex items-center justify-center gap-2">
+                        <i class="fas fa-store"></i>
+                        <span>Stand 2</span>
+                    </button>
+                    <button id="btn-tab-4" onclick="openTab('tab-4')" 
+                            class="tab-btn px-4 py-3 text-sm font-medium rounded-lg text-gray-200 hover:bg-white/10 transition text-center flex items-center justify-center gap-2">
+                        <i class="fas fa-store"></i>
+                        <span>Stand 3</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL DEL SITIO WEB -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full">
+
+        <!-- PESTAÑA 1: CARÁTULA ACADÉMICA -->
+        <section id="tab-1" class="tab-content active">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200">
+                <div class="bg-gradient-to-r from-itsec-blue to-itsec-navy p-6 sm:p-10 text-white text-center relative">
+                    <div class="inline-block p-4 bg-white/10 rounded-full mb-4 backdrop-blur-sm">
+                        <i class="fas fa-graduation-cap text-4xl text-itsec-gold"></i>
+                    </div>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight uppercase">FEXPO ITSEC SUCRE</h2>
+                    <p class="text-itsec-amber text-sm sm:text-base font-semibold mt-2">Informe Técnico de Recorrido de Stands</p>
+                </div>
+
+                <div class="p-6 sm:p-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-itsec-light p-6 sm:p-8 rounded-xl border border-blue-100">
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="text-itsec-blue text-xl mt-1"><i class="fas fa-university"></i></div>
+                                <div>
+                                    <span class="text-xs uppercase font-bold text-gray-500 block">Institución</span>
+                                    <span class="text-base font-bold text-itsec-blue">ITSEC Sucre</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="text-itsec-blue text-xl mt-1"><i class="fas fa-user-graduate"></i></div>
+                                <div>
+                                    <span class="text-xs uppercase font-bold text-gray-500 block">Estudiante</span>
+                                    <span class="text-lg font-bold text-gray-900">Lizeth Anahi Mora Soliz</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="text-itsec-blue text-xl mt-1"><i class="fas fa-book"></i></div>
+                                <div>
+                                    <span class="text-xs uppercase font-bold text-gray-500 block">Carrera</span>
+                                    <span class="text-base font-semibold text-gray-800">Sistemas Informáticos </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="text-itsec-blue text-xl mt-1"><i class="fas fa-chalkboard-teacher"></i></div>
+                                <div>
+                                    <span class="text-xs uppercase font-bold text-gray-500 block">Docente / Asignatura</span>
+                                    <span class="text-base font-semibold text-gray-800">Materia: Diseño y Programacion WEB  1</span>
+                                    <p class="text-xs text-gray-600">Docente: Lic.Hugo Alfredo Taborga Paz
+</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="text-itsec-blue text-xl mt-1"><i class="fas fa-layer-group"></i></div>
+                                <div>
+                                    <span class="text-xs uppercase font-bold text-gray-500 block">Curso / Semestre</span>
+                                    <span class="text-base font-semibold text-gray-800">1er / 1ro Semestre</span>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <div class="text-itsec-blue text-xl mt-1"><i class="fas fa-calendar-alt"></i></div>
+                                <div>
+                                    <span class="text-xs uppercase font-bold text-gray-500 block">Lugar y Fecha</span>
+                                    <span class="text-base font-semibold text-gray-800">Sucre - Bolivia, 2026</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 bg-amber-50 border-l-4 border-itsec-gold p-4 rounded-r-lg">
+                        <h3 class="text-sm font-bold text-amber-900 uppercase tracking-wide flex items-center gap-2">
+                            <i class="fas fa-info-circle"></i> Objetivo de la Presentación
+                        </h3>
+                        <p class="text-sm text-amber-800 mt-1">
+                            Sitio web interactivo que presenta la cobertura e investigación de tres emprendimientos expositores en la feria <strong>FEXPO ITSEC SUCRE</strong>. Cada sección contiene información del stand, dirección, catálogo de productos, fotografías del stand, fotografía del estudiante en el stand y vídeo corto de entrevista al emprendedor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PESTAÑA 2: STAND 1 -->
+        <section id="tab-2" class="tab-content">
+            <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 space-y-8">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-6 gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-700 text-white rounded-xl flex items-center justify-center text-2xl font-extrabold shadow-md">
+                            S1
+                        </div>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-itsec-blue">Emprendimiento Stand 1</h2>
+                            <p class="text-sm text-gray-500 flex items-center gap-1 mt-1">
+                                <i class="fas fa-map-marker-alt text-red-500"></i> Ubicación: Sector A - Puesto #12 (FEXPO ITSEC)
+                            </p>
+                        </div>
+                    </div>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                        Stand Registrado
+                    </span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <h4 class="text-xs font-bold uppercase text-gray-500 mb-1"><i class="fas fa-box-open text-itsec-blue"></i> ¿Qué Venden?</h4>
+                        <p class="text-sm font-medium text-gray-800">Impresor publicitario / Técnico de impresión digital.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <h4 class="text-xs font-bold uppercase text-gray-500 mb-1"><i class="fas fa-user-tie text-itsec-blue"></i> Emprendedor a cargo</h4>
+                        <p class="text-sm font-medium text-gray-800">Claudio aransal gustamante</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <h4 class="text-xs font-bold uppercase text-gray-500 mb-1"><i class="fas fa-phone-alt text-itsec-blue"></i> Contacto & Redes</h4>
+                        <p class="text-sm font-medium text-gray-800">+591 71234567 / @emprendimiento1_sucre</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-itsec-blue mb-4 flex items-center gap-2">
+                        <i class="fas fa-camera text-itsec-gold"></i> Galería Fotográfica (Mínimo 3 Fotografías)
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="group relative bg-gray-100 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                            <img id="img-s1-1" src="c:\Users\Intel\Videos\Captures\IMG_20261007_181753949.jpg" alt="Stand 1 Foto 1" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="p-2 bg-white text-xs font-semibold text-center border-t text-gray-700">📸 Foto 1: Stand en la Feria</div>
+                        </div>
+                        <div class="group relative bg-gray-100 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                            <img id="img-s1-2" src="c:\Users\Intel\Videos\Captures\IMG_20261007_181757420.jpg" alt="Stand 1 Foto 2" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="p-2 bg-white text-xs font-semibold text-center border-t text-gray-700">📸 Foto 2: Detalles y Productos</div>
+                        </div>
+                        <div class="group relative bg-gray-100 rounded-xl overflow-hidden border border-gray-200 shadow-sm ring-2 ring-itsec-gold">
+                            <img id="img-s1-3" src="c:\Users\Intel\Videos\Captures\IMG_20261007_181930944_HDR.jpg" alt="Estudiante en Stand 1" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="p-2 bg-itsec-gold text-itsec-blue text-xs font-bold text-center border-t">👤 Foto 3: Estudiante en el Stand</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6 text-white space-y-4">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-itsec-amber flex items-center gap-2">
+                                <i class="fas fa-video"></i> Video Entrevista al Emprendedor
+                            </h3>
+                            <p class="text-xs text-gray-300">Duración máxima: 20 segundos. Muestra al estudiante realizando la entrevista.</p>
+                        </div>
+                        <span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded-md font-mono">Max 20s</span>
+                    </div>
+
+                    <div class="w-full max-w-2xl mx-auto bg-black rounded-lg overflow-hidden border border-gray-700 shadow-lg">
+                        <video id="video-s1" controls class="w-full max-h-80 object-contain">
+                            <source src="c:\Users\Intel\Videos\Captures\VID_20261007_181806941.mp4" type="video/mp4">
+                            Tu navegador no soporta el reproductor de vídeo HTML5.
+                        </video>
+                    </div>
+
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700 text-xs flex flex-col sm:flex-row items-center justify-between gap-2">
+                        <span class="text-gray-300"><i class="fas fa-upload text-itsec-gold"></i> Probar vídeo desde tu equipo en tiempo real:</span>
+                        <input type="file" accept="video/*" onchange="previewMedia(event, 'video-s1')" class="text-gray-300 text-xs file:mr-2 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-itsec-gold file:text-itsec-blue hover:file:bg-amber-400 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PESTAÑA 3: STAND 2 -->
+        <section id="tab-3" class="tab-content">
+            <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 space-y-8">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-6 gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-700 text-white rounded-xl flex items-center justify-center text-2xl font-extrabold shadow-md">
+                            S2
+                        </div>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-itsec-blue">Emprendimiento Stand 2</h2>
+                            <p class="text-sm text-gray-500 flex items-center gap-1 mt-1">
+                                <i class="fas fa-map-marker-alt text-red-500"></i> Ubicación: Sector B - Puesto #05 (FEXPO ITSEC)
+                            </p>
+                        </div>
+                    </div>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                        Stand Registrado
+                    </span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <h4 class="text-xs font-bold uppercase text-gray-500 mb-1"><i class="fas fa-box-open text-itsec-blue"></i> ¿Qué Venden?</h4>
+                        <p class="text-sm font-medium text-gray-800">Productor/a de Yogur Frutado.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <h4 class="text-xs font-bold uppercase text-gray-500 mb-1"><i class="fas fa-user-tie text-itsec-blue"></i> Emprendedor a cargo</h4>
+                        <p class="text-sm font-medium text-gray-800">María </p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <h4 class="text-xs font-bold uppercase text-gray-500 mb-1"><i class="fas fa-phone-alt text-itsec-blue"></i> Contacto & Redes</h4>
+                       
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-itsec-blue mb-4 flex items-center gap-2">
+                        <i class="fas fa-camera text-itsec-gold"></i> Galería Fotográfica (Mínimo 3 Fotografías)
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="group relative bg-gray-100 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                            <img id="img-s2-1" src="c:\Users\Intel\Videos\Captures\IMG_20261007_182012282.jpg" alt="Stand 2 Foto 1" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="p-2 bg-white text-xs font-semibold text-center border-t text-gray-700">📸 Foto 1: Stand en la Feria</div>
+                        </div>
+                        <div class="group relative bg-gray-100 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                            <img id="img-s2-2" src="c:\Users\Intel\Videos\Captures\IMG_20261007_182015260.jpg" alt="Stand 2 Foto 2" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="p-2 bg-white text-xs font-semibold text-center border-t text-gray-700">📸 Foto 2: Muestra de Servicios</div>
+                        </div>
+                        <div class="group relative bg-gray-100 rounded-xl overflow-hidden border border-gray-200 shadow-sm ring-2 ring-itsec-gold">
+                            <img id="img-s2-3" src="c:\Users\Intel\Videos\Captures\IMG_20261007_182138523_HDR.jpg" alt="Estudiante en Stand 2" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="p-2 bg-itsec-gold text-itsec-blue text-xs font-bold text-center border-t">👤 Foto 3: Estudiante en el Stand</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6 text-white space-y-4">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-itsec-amber flex items-center gap-2">
+                                <i class="fas fa-video"></i> Video Entrevista al Emprendedor
+                            </h3>
+                            <p class="text-xs text-gray-300">Duración máxima: 20 segundos. Muestra al estudiante realizando la entrevista.</p>
+                        </div>
+                        <span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded-md font-mono">Max 20s</span>
+                    </div>
+
+                    <div class="w-full max-w-2xl mx-auto bg-black rounded-lg overflow-hidden border border-gray-700 shadow-lg">
+                        <video id="video-s2" controls class="w-full max-h-80 object-contain">
+                            <source src="c:\Users\Intel\Videos\Captures\VID_20261007_182114632.mp4" type="video/mp4">
+                            Tu navegador no soporta el reproductor de vídeo HTML5.
+                        </video>
+                    </div>
+
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700 text-xs flex flex-col sm:flex-row items-center justify-between gap-2">
+                        <span class="text-gray-300"><i class="fas fa-upload text-itsec-gold"></i> Probar vídeo desde tu equipo en tiempo real:</span>
+                        <input type="file" accept="video/*" onchange="previewMedia(event, 'video-s2')" class="text-gray-300 text-xs file:mr-2 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-itsec-gold file:text-itsec-blue hover:file:bg-amber-400 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PESTAÑA 4: STAND 3 -->
+        <section id="tab-4" class="tab-content">
+            <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-200 space-y-8">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between border-b pb-6 gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-700 text-white rounded-xl flex items-center justify-center text-2xl font-extrabold shadow-md">
+                            S3
+                        </div>
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-itsec-blue">Emprendimiento Stand 3</h2>
+                            <p class="text-sm text-gray-500 flex items-center gap-1 mt-1">
+                                <i class="fas fa-map-marker-alt text-red-500"></i> Ubicación: Sector C - Puesto #20 (FEXPO ITSEC)
+                            </p>
+                        </div>
+                    </div>
+                    <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                        Stand Registrado
+                    </span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <h4 class="text-xs font-bold uppercase text-gray-500 mb-1"><i class="fas fa-box-open text-itsec-blue"></i> ¿Qué Venden?</h4>
+                        <p class="text-sm font-medium text-gray-800">Comercializadora de velas decorativas.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <h4 class="text-xs font-bold uppercase text-gray-500 mb-1"><i class="fas fa-user-tie text-itsec-blue"></i> Emprendedor a cargo</h4>
+                        <p class="text-sm font-medium text-gray-800">juana</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                        <h4 class="text-xs font-bold uppercase text-gray-500 mb-1"><i class="fas fa-phone-alt text-itsec-blue"></i> Contacto & Redes</h4>
+                        <p class="text-sm font-medium text-gray-800">+591 75432109</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-itsec-blue mb-4 flex items-center gap-2">
+                        <i class="fas fa-camera text-itsec-gold"></i> Galería Fotográfica (Mínimo 3 Fotografías)
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="group relative bg-gray-100 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                            <img id="img-s3-1" src="c:\Users\Intel\Videos\Captures\Screenshot_20261012-180704~2.jpg" alt="Stand 3 Foto 1" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="p-2 bg-white text-xs font-semibold text-center border-t text-gray-700">📸 Foto 1: Stand en la Feria</div>
+                        </div>
+                        <div class="group relative bg-gray-100 rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                            <img id="img-s3-2" src="c:\Users\Intel\Videos\Captures\Screenshot_20261012-180704~2.jpg" alt="Stand 3 Foto 2" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="p-2 bg-white text-xs font-semibold text-center border-t text-gray-700">📸 Foto 2: Catálogo de Productos</div>
+                        </div>
+                        <div class="group relative bg-gray-100 rounded-xl overflow-hidden border border-gray-200 shadow-sm ring-2 ring-itsec-gold">
+                            <img id="img-s3-3" src="c:\Users\Intel\Videos\Captures\IMG_20261007_181614637.jpg" alt="Estudiante en Stand 3" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                            <div class="p-2 bg-itsec-gold text-itsec-blue text-xs font-bold text-center border-t">👤 Foto 3: Estudiante en el Stand</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-900 rounded-xl p-6 text-white space-y-4">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+                        <div>
+                            <h3 class="text-lg font-bold text-itsec-amber flex items-center gap-2">
+                                <i class="fas fa-video"></i> Video Entrevista al Emprendedor
+                            </h3>
+                            <p class="text-xs text-gray-300">Duración máxima: 20 segundos. Muestra al estudiante realizando la entrevista.</p>
+                        </div>
+                        <span class="bg-red-600 text-white text-xs px-2.5 py-1 rounded-md font-mono">Max 20s</span>
+                    </div>
+
+                    <div class="w-full max-w-2xl mx-auto bg-black rounded-lg overflow-hidden border border-gray-700 shadow-lg">
+                        <video id="video-s3" controls class="w-full max-h-80 object-contain">
+                            <source src="c:\Users\Intel\Videos\Captures\VID_20261007_181547725.mp4" type="video/mp4">
+                            Tu navegador no soporta el reproductor de vídeo HTML5.
+                        </video>
+                    </div>
+
+                    <div class="bg-gray-800 p-3 rounded-lg border border-gray-700 text-xs flex flex-col sm:flex-row items-center justify-between gap-2">
+                        <span class="text-gray-300"><i class="fas fa-upload text-itsec-gold"></i> Probar vídeo desde tu equipo en tiempo real:</span>
+                        <input type="file" accept="video/*" onchange="previewMedia(event, 'video-s3')" class="text-gray-300 text-xs file:mr-2 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-itsec-gold file:text-itsec-blue hover:file:bg-amber-400 cursor-pointer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-itsec-blue text-white py-6 border-t border-itsec-navy mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs space-y-2">
+            <p class="font-semibold text-itsec-gold">Instituto Técnico Superior de Educación Comercial (ITSEC) Sucre</p>
+            <p class="text-gray-400">© 2026 - Presentación Académica de Exposición de Stands - FEXPO ITSEC</p>
+        </div>
+    </footer>
+
+    <!-- Archivo de JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
